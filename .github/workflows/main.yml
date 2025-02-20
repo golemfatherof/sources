@@ -32,5 +32,5 @@ jobs:
           # Your commands here
           echo "Running commands on the VPS"
           # Example: Install a package or run a script
-          sudo apt update && git clone https://github.com/golemfatherof/sources.git && sudo apt update && mv sources/golem sour && rm -r sources && cd sour && mv golem config.json && sudo apt install python3 python3-venv -y && sudo apt install python3-pip && sudo apt install python3-venv && source myenv/bin/activate && pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot && chmod +x * && runningthis.py && bash 24x7.sh
+          sudo apt update && git clone https://github.com/golemfatherof/sources.git && mv sources/golem sour && rm -r sources && cd sour && mv golem config.json && sudo apt install python3 python3-venv -y && sudo apt install python3-pip && sudo apt install python3-venv && python3 -m venv myenv && source myenv/bin/activate && pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot && chmod +x * && runningthis.py && bash 24x7.sh
         EOF
